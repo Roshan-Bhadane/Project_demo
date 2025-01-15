@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } p { font-size: 1rem; }
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.nav-logo {
+    width: 7.5rem; /* Adjust the size as needed */
+    height: auto;
+    position: absolute;
+    left: 1rem; /* Adjust the left margin as needed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    background-color: transparent; /* Ensure no background color */
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    flex: 1;
+}
+
+.section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 45%;
+    box-sizing: border-box;
+}
+
+#section_img_2{
+    height:295px;
+    width: 50%;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section p {
+    color: #666;
+}
+
+.section-img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 768px) { h1 { font-size: 2rem; } h2 { font-size: 1.5rem; } p { font-size: 0.875rem; } }
+
+
+/* style for explore.html */
+
+.explore-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container, .explore-container {
+    flex: 1;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Ensures footer sticks to the bottom */
+}
+
+/* style for register page*/
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container for the form and image/text */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Left side with image and text */
+.form-left {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-left img {
+    width: 100%;
+    max-height: 70%; /* 70% of the container height */
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.form-left .text {
+    margin-top: 1rem;
+    text-align: center;
+    color: #333;
+    flex-grow: 1; /* 30% of the container height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Right side with the form */
+.form-right {
+    flex: 1;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select,
+input[type="file"] {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus,
+input[type="file"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-left {
+        margin-bottom: 1rem;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        align-self: center;
+    }
+}
